@@ -143,7 +143,7 @@ describe('Routes', () => {
             expect(res.body.favoriteCoffeeId).to.equal(mocha.id)
           })
 
-        const codyFromDatabase = await Pug.findById(cody.id)
+        const codyFromDatabase = await Pug.findByPk(cody.id)
         expect(codyFromDatabase.favoriteCoffeeId).to.equal(mocha.id)
       })
 
@@ -160,7 +160,7 @@ describe('Routes', () => {
           .delete(`/api/pugs/${doug.id}`) // Oh noes! Bye, Doug!
           .expect(204)
 
-        const isDougStillThere = await Pug.findById(doug.id)
+        const isDougStillThere = await Pug.findByPk(doug.id)
         expect(isDougStillThere).to.equal(null)
       })
 
