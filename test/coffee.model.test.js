@@ -49,7 +49,7 @@ xdescribe('Coffee model', () => {
   })
 
   // Arf! You'll use the Sequelize.Op.contains operator here!
-  // http://docs.sequelizejs.com/manual/tutorial/querying.html#operators
+  // https://sequelize.org/v5/manual/querying.html#operators
   // Be careful! It's a little bit unintuitive because the value you're
   // querying for needs to be in an array (even if it's just one value):
   //
