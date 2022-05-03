@@ -13,7 +13,7 @@ describe('Funky functions', () => {
   // intersection
   // Creates an array of unique values that are included in the two given arrays.
   // Based on: https://lodash.com/docs/4.17.5#intersection
-  xdescribe('intersection', () => {
+  describe('intersection', () => {
     it('returns an array', () => {
       expect(intersection([], [])).to.be.an('array')
     })
